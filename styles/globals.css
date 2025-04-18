@@ -1,0 +1,422 @@
+/* Gloabl Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+
+.login-form {
+  background-color: white;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Set max width */
+}
+
+.login-form h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form input:focus {
+  border-color: #3b82f6; /* Blue border on focus */
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+}
+
+.login-form .signup-link {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 16px;
+}
+
+.login-form .signup-link a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.login-form .signup-link a:hover {
+  text-decoration: underline;
+}
+
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ebf8ff, #ffffff, #ebf8ff);
+  padding: 1rem;
+}
+
+.login-wrapper {
+  width: 65vw;
+  height: 35vw;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 1.5rem;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-bottom: 2rem;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: 0.3s ease;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.login-button:hover {
+  background-color: #1d4ed8;
+}
+
+.login-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 1.25rem;
+}
+
+.login-footer a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Dashbord Container with Gradient Backgroung */
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #cce7ff, white, #b3e0ff); /* blue-100 -> white -> blue-200 */
+  padding: 2rem;
+}
+
+/* Contnt Container */
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading Stle */
+.dashboard-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #686565;
+  margin-bottom: 2.5rem;
+}
+
+/* Grid Layout for Dashbord Cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Crd Style */
+.dashboard-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+/* Crd Title Style */
+.dashboard-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f4e79; /* blue-700 */
+  margin-bottom: 1rem;
+}
+
+/* Crd Description Style */
+.dashboard-card-desc {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* Contaner styling */
+.documents-container {
+  padding: 1.5rem;
+}
+
+/* Heading stling */
+.documents-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* File input stylying */
+.documents-file-input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+}
+
+.documents-file-input:hover {
+  border-color: #007bff;
+}
+
+/* List stylying */
+.documents-file-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #555;
+}
+
+.documents-file-list li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Back button stylng */
+.back-button {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Wraper for centering the contnt */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8; /* Optional, for better visualization */
+}
+
+/* Documnt container stylying */
+.documents-box {
+  width: 300px; /* Decreased width to make it smaller */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Optinal: styling for the file input with 10% margin on left and right */
+.documents-file-input {
+  width: 80%; /* Adjusted to maintain the 10% margin on both sides */
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* List of uploded files */
+.documents-file-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.documents-heading {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+
+.back-button {
+  margin-bottom: 10px;
+}
+
+
+/* Wrappper for centering the content */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8; /* Optional, for better visualization */
+}
+
+/* Ingstion container styling */
+.ingestion-box {
+  width: 300px; /* Adjust width */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Ingstion button styling */
+.ingestion-button {
+  background-color: #6b46c1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.ingestion-button:hover {
+  background-color: #553c9a;
+}
+
+/* Sttus text styling */
+.ingestion-status {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+
+/* Wrappper for centering the content */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7fafc; /* Optional, for better visualization */
+}
+
+/* Q&A container stylying */
+.qa-box {
+  width: 350px; /* Adjust width */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Quetion input styling with left and right margins of 10% */
+.qa-input {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 80%; /* Reduced width to account for margins */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Ask button styling */
+.qa-button {
+  background-color: #2b6cb0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.qa-button:hover {
+  background-color: #2b4d7d;
+}
